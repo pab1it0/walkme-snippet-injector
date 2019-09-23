@@ -1,0 +1,44 @@
+{
+  "name": "@pasha1986/walkme-snippet-injector.git",
+  "version": "1.0.0",
+  "description": "Cloudflare app to injects WalkMe's snippet into your website",
+  "scripts": {
+    "start": "npm-run-all dev:setup dev:webpack",
+    "dev:webpack": "webpack --watch --colors",
+    "dev:setup": "npm-run-all lint",
+    "build": "npm-run-all lint build:webpack",
+    "build:webpack": "NODE_ENV=production webpack --colors",
+    "lint": "node_modules/.bin/eslint --fix --ext .js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasha1986/walkme-snippet-injector.git.git"
+  },
+  "author": "Pavel Shklovsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pasha1986/walkme-snippet-injector.git/issues"
+  },
+  "homepage": "https://github.com/pasha1986/walkme-snippet-injector.git#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "2.6.1",
+    "eslint-watch": "^4.0.2",
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "prettier": "^1.14.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2",
+    "yarn-run-all": "^3.1.1"
+  }
+}

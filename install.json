@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json.schemastore.org/install",
+    "resources": {
+      "body": [
+        {
+          "type": "style",
+          "src": "./build/styles.css"
+        },
+        {
+          "type": "script",
+          "src": "./build/index.js"
+        }
+      ]
+    },
+    "preview": {
+      "handlers": [
+        {
+          "options": ["_default"],
+          "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
+        }
+      ]
+    },
+    "options": {
+      "properties": {
+        "walkmeUserId": {
+          "title": "WalkMe User ID",
+          "description": "The User ID associated with your WalkMe account.",
+          "type": "string",
+          "placeholder": "Insert your WalkMe User ID here"
+        }
+      }
+    }
+  }
