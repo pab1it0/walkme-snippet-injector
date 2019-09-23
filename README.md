@@ -2,7 +2,7 @@
 # walkme-snippet-injector
 Cloudflare app to injects WalkMe's snippet to a site integrated with [Cloudflare](https://cloudflare.com)
 
-## Debug
+## Build
 1. Install modules
 ```bash
 $ npm install
@@ -17,12 +17,24 @@ $ yarn build
 TODO - add installation link
 
 ## Usage
- 1. Install the app
- 2. Grab you WalkMe User ID  (Also known as User GUID) from within your Editor. GOTO Manu -> Snippet: 
+1. Install the app
+2. Grab you WalkMe User ID  (Also known as User GUID) from within your Editor. GOTO Manu -> Snippet: 
 ![Snippet](media/snippet.png?raw=true "Snippet")
- 3. Insert your WalkMe User ID.
+3. Insert your WalkMe User ID
+4. Click on `Preview in seperate window`
+5. Right-click and select inspect the page
+6. Open the console
+7. Enter the following text query: `_walkMe.getEnvId();`
+8. If it returns undefined, the Snippet is not properly set up.  If the query returns a value, then you’re all set!
 
 Troubleshooting and other methods to inject WalkMe's snippet: [https://support.walkme.com/knowledge-base/snippet/](https://support.walkme.com/knowledge-base/snippet/)
+
+## Test
+1. Build sources
+2. Upload the folder to [app-creator](https://www.cloudflare.com/apps/developer/app-creator)
+3. Insert your WalkMe User ID, or use the following test user id: `e10edb82f7094e61a758e821f91dc4b3`
+4. Continue from section 4 in `Usage` section.
+
 
 ## Contributing
 1. Fork it (<https://github.com/pasha1986/walkme-snippet-injector.git/fork>)
