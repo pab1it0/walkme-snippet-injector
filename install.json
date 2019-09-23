@@ -22,7 +22,7 @@
     },
     "options": {
       "properties": {
-        "walkmeUserId": {
+        "walkmeUserGuid": {
           "title": "WalkMe User ID",
           "description": "The User ID associated with your WalkMe account.",
           "type": "string",

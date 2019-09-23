@@ -10,9 +10,10 @@ function init() {
     walkme = document.createElement("script")
     walkme.type = "text/javascript"
     walkme.async = true
-    walkme.src = `https://cdn.walkme.com/users/${options.walkmeUserId}/walkme_${options.walkmeUserId}_https.js`
+    walkme.src = `https://cdn.walkme.com/users/${options.walkmeUserGuid}/walkme_${options.walkmeUserGuid}_https.js`
     const s = document.getElementsByTagName("script")[0]
     s.parentNode.insertBefore(walkme, s)
+
     /* eslint no-underscore-dangle: ["error", { "allow": ["_walkmeConfig"] }] */
     window._walkmeConfig = { smartLoad: true }
   }
