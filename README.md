@@ -14,7 +14,13 @@ $ yarn build
 ```
 
 ## Installation
-TODO - add installation link
+<a href="https://cloudflare.com/apps/jilDYXfMlqR5/install?source=button">
+  <img
+    src="https://install.cloudflareapps.com/install-button.png"
+    alt="Install walkme-snippet-injector with Cloudflare"
+    border="0"
+    width="150">
+</a>
 
 ## Usage
 1. Install the app
